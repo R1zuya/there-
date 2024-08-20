@@ -1,24 +1,16 @@
+import os
+
 class Config(object):
     LOGGER = True
-
-    # Get this value from my.telegram.org/apps
-    OWNER_ID = "6765826972"
-    sudo_users = "6845325416", "6765826972"
-    GROUP_ID = -1002133191051
-    TOKEN = "7324441992:AAEz6aAe_86XX4RdVpoHmGeDclFw4r-z_H0"
-    mongo_url = "mongodb+srv://Douma:Douma@douma.yjsryni.mongodb.net"
-    PHOTO_URL = ["https://telegra.ph/file/b925c3985f0f325e62e17.jpg", "https://telegra.ph/file/4211fb191383d895dab9d.jpg"]
-    SUPPORT_CHAT = "Collect_em_support"
-    UPDATE_CHAT = "Collect_em_support"
-    BOT_USERNAME = "Collect_Em_AllBot"
-    CHARA_CHANNEL_ID = "-1002133191051"
-    api_id = 26626068
-    api_hash = "bf423698bcbe33cfd58b11c78c42caa2"
-
-    
-class Production(Config):
-    LOGGER = True
-
-
-class Development(Config):
-    LOGGER = True
+    OWNER_ID = os.getenv("OWNER_ID")
+    sudo_users = os.getenv("SUDO_USERS", "").split(",")
+    GROUP_ID = int(os.getenv("GROUP_ID", 0))
+    TOKEN = os.getenv("BOT_TOKEN")
+    mongo_url = os.getenv("MONGO_URL")
+    PHOTO_URL = os.getenv("PHOTO_URL", "").split(",")
+    SUPPORT_CHAT = os.getenv("SUPPORT_CHAT")
+    UPDATE_CHAT = os.getenv("UPDATE_CHAT")
+    BOT_USERNAME = os.getenv("BOT_USERNAME")
+    CHARA_CHANNEL_ID = int(os.getenv("CHARA_CHANNEL_ID", 0))
+    api_id = int(os.getenv("API_ID", 0))
+    api_hash = os.getenv("API_HASH")
