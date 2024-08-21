@@ -6,7 +6,7 @@ class Config(object):
      SUDO_USERS="7368341648, 1102584877, 6653725844, 2107880985, 6149361523, 7013604559"
      GROUP_ID="-1001593116522"
      BOT_TOKEN="6913009476:AAE1fdTf_TvbDCBNWiAh1XyHhchpeftUez4"
-     MONGO_URL="mongodb+srv://Douma:Douma@douma.yjsryni.mongodb.net"
+     MONGO_URL="mongodb+srv://Douma:Douma@douma.yjsryni.mongodb.net/mydatabase?retryWrites=true&w=majority""
      PHOTO_URL="url1,url2"
      SUPPORT_CHAT="Anime_chat_enigmatic"
      UPDATE_CHAT="anime_chat_enigmatic"
