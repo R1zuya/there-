@@ -7,7 +7,7 @@ class Config(object):
      GROUP_ID="-1001593116522"
      BOT_TOKEN="6913009476:AAE1fdTf_TvbDCBNWiAh1XyHhchpeftUez4"
      MONGO_URL="mongodb+srv://Douma:Douma@douma.yjsryni.mongodb.net/mydatabase?retryWrites=true&w=majority""
-     PHOTO_URL="url1,url2"
+     PHOTO_URL="https://telegra.ph/file/d03c85bc4c8ff6c4a5a3d.jpg, https://telegra.ph/file/43523b18bef44c34fc421.jpg"
      SUPPORT_CHAT="Anime_chat_enigmatic"
      UPDATE_CHAT="anime_chat_enigmatic"
      BOT_USERNAME="@guess_waifu_robot" 
